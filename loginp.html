@@ -1,0 +1,236 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+
+	<title>Login to Ayush</title>
+
+	<!-- Stylesheets -->
+	
+	<!-- Google Fonts -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+	<!-- Bootstrap -->
+	<link href="https://static.swappa.com/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/style1.css" rel="stylesheet">
+	<link href="css/style2.css" rel="stylesheet">
+
+	<style>
+		#formLogin .form-group {
+			margin-bottom: 5px;
+		}
+
+		.btn-social {margin-bottom: 10px;}
+		.btn-social-icon {margin: 10px 20px 0;}
+		.or_horizontal {
+			background-color: white;
+			display: block;
+			left: 50%;
+			margin-left: -1.5em;
+			position: absolute;
+			text-align: center;
+			top: -0.6em;
+			width: 3em;
+			color: #aaa;
+			font-size: 1.5em;
+		}
+		
+		#outpopup{
+			position: absolute;
+			width: 300px;
+			height: 200px;
+			z-index: 15;
+			top: 45%;
+			left: 45%;
+			margin: -100px 0 0 -150px;
+
+		}
+		#example1 {
+ 				 border: 2px solid black;
+ 						 padding: 25px;
+  					background: url(images/index_hero.jpg);
+  					background-repeat: no-repeat;
+  					background-size: auto;
+					}
+
+		.or_vertical_container {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -1em;
+			background-color: white;
+			height: 3em;
+			line-height: 3em;
+			margin-top: -1.5em;
+		}
+		.or_vertical {
+			height: 3em;
+			color: #aaa;
+			font-size: 1.5em;
+		}
+		.btn-social-icon.btn-xxl {
+			height: 75px;
+			padding-left: 0;
+			padding-right: 0;
+			width: 75px;
+		}
+		.btn-social-icon.btn-xxl *:first-child {
+			font-size: 1.9em;
+			line-height: 75px;
+			width: 75px;
+		}
+		.btn-xda{color:#fff;background-color:#ffbd2d;border-color:rgba(0,0,0,0.2)}.btn-xda:hover,.btn-xda:focus,.btn-xda:active,.btn-xda.active,.open>.dropdown-toggle.btn-xda{color:#fff;background-color: #d8982d;border-color:rgba(0,0,0,0.2)}
+		.btn-xda:active,.btn-xda.active,.open>.dropdown-toggle.btn-xda{background-image:none}
+		.btn-xda.disabled,.btn-xda[disabled],fieldset[disabled] .btn-xda,.btn-xda.disabled:hover,.btn-xda[disabled]:hover,fieldset[disabled] .btn-xda:hover,.btn-xda.disabled:focus,.btn-xda[disabled]:focus,fieldset[disabled] .btn-xda:focus,.btn-xda.disabled:active,.btn-xda[disabled]:active,fieldset[disabled] .btn-xda:active,.btn-xda.disabled.active,.btn-xda[disabled].active,fieldset[disabled] .btn-xda.active{background-color:#ffbd2d;border-color:rgba(0,0,0,0.2)}
+		.btn-xda .badge{color:#ffbd2d;background-color:#fff}
+
+		.forgot-password {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.btn-lg{
+			border-radius: 3px;
+		}
+		.btn-google{
+			color: #fff;
+    		background-color: #4285F4;
+    		border-color: rgba(0,0,0,0.2);
+    		opacity: 1;
+		}
+		.btn-google:hover{
+			color: #fff;
+			opacity: 0.8;
+		}
+		.btn-google img{
+			background: #fff;
+			padding: 16px 13px;
+		}
+	</style>
+
+</head>
+
+<body background="images/index_hero.jpg" style="overflow-x: hidden;">
+
+
+<div id="wrap">
+<header class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<a class="navbar-brand" href="index.php">
+                  
+                  <header class="header" id="header">
+							
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-content">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<div class="pull-right visible-xs" style="margin-right: 4px;">
+				<a href="/search" id="mob_nav_search" class="btn btn-default navbar-btn" title="Search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div id="navbar-collapse-content" class="collapse navbar-collapse">
+			
+			
+			<form id="header_search_form" class="navbar-form navbar-search navbar-left hidden-xs" role="search" action="search.php" method="get">
+				<div class="input-group">
+					<div class="input-group">
+						
+						<span class="input-group-btn">
+							
+						</span>
+					</div>
+					
+					
+				</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				
+				
+			
+				<li id="top_nav_login" class="">
+					<a href="login.html" title="Login" rel="nofollow">
+						Login
+					</a>
+				</li>
+				<li id="top_nav_register" class="">
+					<a href="reg.php" title="Register" rel="nofollow">
+						Register
+					</a>
+				</li>
+			
+			</ul>
+		</div>
+	</div>
+</header>	
+
+	<div id="outpopup" >
+
+		<div class="container" >
+
+	
+	
+	
+
+	
+			<div class="messages" style="margin-bottom: 10px;">
+	
+
+		
+
+				<div class="col-lg-5 col-md-5 col-sm-10 col-md-offset-0 col-sm-offset-1" style="margin-bottom: 20px;">
+
+					<h3 class="text-center" style="margin-top:10px; margin-bottom: 20px;">Login Here</h3>
+
+			
+
+					<form id="formLogin" action="login.php" method="post" role="form">
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input id="id_username" type="text" class="form-control input-lg" name="username" placeholder="Email address" value="">
+					</div>
+					<div class="errors help-block" style="margin: 0px; padding-top: 5px;"></div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input id="id_password" type="password" class="form-control input-lg" name="password" placeholder="Password">
+					</div>
+					<div class="errors help-block" style="margin: 0px; padding-top: 5px;"></div>
+				</div>
+				<button class="btn btn-primary btn-block btn-lg" type="submit">Login</button>
+			</form>
+			<div class="row text-center" style="margin-top: 10px;">
+				<div class="col-xs-6">
+					<a href="reg.php" class="pull-left btn btn-warning btn-lg">
+						<span class="fa fa-plus-circle hidden-xs" aria-hidden="true"></span>
+						Register New
+					</a>
+				</div>
+				<!--<div class="col-xs-6">
+					<a href="/registration/recover/" class="pull-right btn btn-default btn-lg">
+						Forgot Password
+						<span class="fa fa-question-circle hidden-xs" aria-hidden="true"></span>
+					</a>
+				</div>-->
+		    </div>
+		</div>
+		
+	</div>
+	
+	</div>
+</div>
+</div>
+
+	
+
+</body>
+</html>
