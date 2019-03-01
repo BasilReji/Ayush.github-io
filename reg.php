@@ -39,6 +39,11 @@
   right: 850px;
   border: 3px solid #73AD21;
 }
+.bottomb {
+  position: absolute;
+  top : 3%;
+  right: 20px;
+}
 .custom-select {
   position: relative;
   font-family: Arial;
@@ -98,6 +103,20 @@
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+.button {
+  background-color: blue; /* Green */
+  border: none;
+  color: white;
+  width: 100px;
+height: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {border-radius: 20px;}
    </style>
 <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:fb="http://ogp.me/ns/fb#">
    <head>
@@ -171,11 +190,10 @@
          <header class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
+
+			
                   
-                  <a class="navbar-brand" href="index.php">
-                  
-                  </a>
+              
                   <div class="pull-right visible-xs" style="margin-right: 4px;">
                      
                     
@@ -201,6 +219,7 @@
             <h1>
                Register with Ayush
             </h1>
+
 
             <div class="row">
                <div class="col-sm-12">
@@ -306,6 +325,14 @@
       </div>
       <div>
       </div>
+
+      <div class="bottomb">
+               	
+					<input type="button" value="Home" class="button button1"onclick="window.location.href='index.html'"></input>
+					<input type="button" value="login" class="button button1"onclick="window.location.href='login.html'"></input>
+					
+				</div>	
+				
      	<script>
 var x, i, j, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
