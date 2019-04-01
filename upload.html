@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>File Upload</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="css/style1.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./student_files/bootstrap.css"> 
+    <link rel="stylesheet" href="./student_files/calendar.css">
+    <link href="./student_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./student_files/app.v1.css">
+    
+
+	<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: red;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 49%;
+  font-size: 18px;
+
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+body
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
+<style type="text/css">.jqstooltip {
+ position: absolute;
+left: 0px;
+top: 0px;
+visibility: hidden;
+background: rgb(0, 0, 0) transparent;
+background-color: rgba(0,0,0,0.6);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+color: white;font: 10px arial, san serif;
+text-align: left;
+white-space: nowrap;
+padding: 5px;
+border: 1px solid white;
+z-index: 10000;
+}
+.jqsfield {
+ color: white;
+font: 10px arial, san serif;
+text-align: left;
+}
+</style>
+	
+
+	
+
+	
+
+</head>
+<body data-ng-app="" class="ng-scope">
+
+	
+    <!-- Preloader -->
+    
+    <!-- Preloader -->
+    	
+    
+	<aside class="left-panel" tabindex="5003" style="overflow: hidden; outline: none;">
+    		
+            <div class="user text-center">
+                  <img src="./student_files/user.png" class="img-circle" alt="...">
+                  <h4 class="user-name">Akshay Kumar</h4>
+                  
+                  <!--<div class="dropdown user-login">
+                  <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" aria-expanded="true">
+                    <i class="fa fa-circle status-icon available"></i> Available <i class="fa fa-angle-down"></i>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" href=""><i class="fa fa-circle status-icon signout"></i> Busy</a></li>
+                    <li role="presentation"><a role="menuitem" href=""><i class="fa fa-circle status-icon signout"></i> Sign out</a></li>
+                  </ul>
+                  </div>-->	 
+            </div>
+            
+            
+            
+            <nav class="navigation">
+            	<ul class="list-unstyled">
+            		<li class="has-submenu"><a href="front.html"><i class="fa fa-heart-o"></i> <span class="nav-label">DashBoard</span></a>
+                    	
+                    </li>
+                	<li class="active"><a href="upload.html"><i class="fa fa-bookmark-o"></i><span class="nav-label">File Upload</span></a></li>
+                    
+                    <li class="has-submenu"><a href="#"><i class="fa fa-flag-o"></i> <span class="nav-label">History</span></a>
+                    	
+                    </li>
+					<li class="has-submenu"><a href="#"><i class="fa fa-heart-o"></i> <span class="nav-label">Health Data</span></a>
+                    	
+                    </li>
+                    <li class="has-submenu"><a href="settings.html"><i class="fa fa-heart-o"></i> <span class="nav-label">Account Settings</span></a>
+                    	
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="fa fa-heart-o"></i> <span class="nav-label">Contacts</span></a>
+                    	
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="fa fa-heart-o"></i> <span class="nav-label">Permissions</span></a>
+                    	
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="fa fa-heart-o"></i> <span class="nav-label">Help</span></a>
+                    	
+                    </li>
+                    <li class="has-submenu"><a href="index.html"><i class="fa fa-file-text-o"></i> <span class="nav-label">logout</span></a>
+                    	
+                    </li>
+                   
+                </ul>
+            </nav>
+            
+    </aside>
+    <!-- Aside Ends-->
+    
+    <section class="content">
+    	
+        <header class="top-head container-fluid">
+            <!--<button type="button" class="navbar-toggle pull-left">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            -->
+            
+            
+            
+            
+          
+        </header>
+        <!-- Header Ends -->
+        
+       
+        <div class="row">
+        
+            <!-- Uploader Dropzone -->
+            <div id="zdrop" class="fileuploader ">
+                <div id="upload-label" style="width: 200px;">
+                    <i class="material-icons">cloud_upload</i>
+                    <span class="title">Select your Files here</span>
+                    
+                
+            </div>
+            <!-- Preview collection of uploaded documents -->
+            <div class="preview-container">
+                <div class="header">
+                    <span>Uploaded Files</span> 
+                    <i id="controller" class="material-icons">keyboard_arrow_down</i>
+                </div>
+                <div class="collection card" id="previews">
+                    <div class="collection-item clearhack valign-wrapper item-template" id="zdrop-template">
+                        <div class="left pv zdrop-info" data-dz-thumbnail>
+                            <div>
+                                <span data-dz-name></span> <span data-dz-size></span>
+                            </div>
+                            <div class="progress">
+                                <div class="determinate" style="width:0" data-dz-uploadprogress></div>
+                            </div>
+                            <div class="dz-error-message"><span data-dz-errormessage></span></div>
+                        </div>
+
+                        <div class="secondary-content actions">
+                            <a href="#!" data-dz-remove class="btn-floating ph red white-text waves-effect waves-light"><i class="material-icons white-text">clear</i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.0.1/dropzone.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+               
+                <!--/tab-pane-->
+                
+                <!--/tab-pane-->
+                
+        <!--/tab-content-->
+
+    
+<!--/row-->
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	                        
+
+                        
+
+              	  
+                                                      
+</script>
+       
+        
+    </section>
+    
+    
+
+</body></html>

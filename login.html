@@ -4,6 +4,11 @@
 <head>
 
 	<title>Login to Ayush</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 	<!-- Stylesheets -->
 	
@@ -15,6 +20,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/style1.css" rel="stylesheet">
 	<link href="css/style2.css" rel="stylesheet">
+
 
 	<style>
 		#formLogin .form-group {
@@ -106,6 +112,10 @@
 			background: #fff;
 			padding: 16px 13px;
 		}
+		.font{
+			color: white;
+		}
+
 	</style>
 
 </head>
@@ -164,13 +174,12 @@
 						Login
 					</a>
 				</li>
-				<li id="top_nav_register" class="">
-					<a href="regis.html" title="Register" rel="nofollow">
-						Register
-					</a>
-				</li>
-			
-			</ul>
+				 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Register <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="regp.html">Patient</a></li>
+          <li><a href="regd.html">Doctor</a></li>
+          <li><a href="regh.html">Hospital</a></li>
+        </ul>
 		</div>
 	</div>
 </header>	
@@ -191,19 +200,19 @@
 
 				<div class="col-lg-5 col-md-5 col-sm-10 col-md-offset-0 col-sm-offset-1" style="margin-bottom: 20px;">
 
-					<h3 class="text-center" style="margin-top:10px; margin-bottom: 20px;">Login Here</h3>
+					<h3 class="text-center" style="margin-top:10px; margin-bottom: 20px;"><b><i>Login Here</i></b></h3>
 
 			
 
-					<form id="formLogin" action="login.php" method="post" role="form">
-				<div class="form-group">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-						<input id="id_username" type="text" class="form-control input-lg" name="username" placeholder="Email address" value="">
+					<form id="formLogin" action="front.html" method="post" role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input id="id_username" type="text" class="form-control input-lg" name="username" placeholder="Email address" value="">
+						</div>
+						<div class="errors help-block" style="margin: 0px; padding-top: 5px;"></div>
 					</div>
-					<div class="errors help-block" style="margin: 0px; padding-top: 5px;"></div>
-				</div>
-				<div class="form-group">
+					<div class="form-group">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 						<input id="id_password" type="password" class="form-control input-lg" name="password" placeholder="Password">
@@ -211,27 +220,19 @@
 					<div class="errors help-block" style="margin: 0px; padding-top: 5px;"></div>
 				</div>
 				<button class="btn btn-primary btn-block btn-lg" type="submit">Login</button>
-			</form>
-			<div class="row text-center" style="margin-top: 10px;">
-				<div class="col-xs-6">
-					<a href="regis.html" class="pull-left btn btn-warning btn-lg">
-						<span class="fa fa-plus-circle hidden-xs" aria-hidden="true"></span>
-						Register New
-					</a>
-				</div>
-				<!--<div class="col-xs-6">
-					<a href="/registration/recover/" class="pull-right btn btn-default btn-lg">
-						Forgot Password
-						<span class="fa fa-question-circle hidden-xs" aria-hidden="true"></span>
-					</a>
-				</div>-->
-		    </div>
+				</form>
+			</div>
 		</div>
+	
+
+		
+
+				
 		
 	</div>
 	
 	</div>
-</div>
+
 </div>
 
 	

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-animate){display:none !important;}ng\:form{display:block;}</style>
+  
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>User Settings</title>
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from https://bootdey.com  -->
+    <!--  All snippets are MIT license https://bootdey.com/license -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body{margin-top:20px;}                                                                    
+    </style>
+
+    <style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 49%;
+  font-size: 18px;
+
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+    <style>
+        body
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
+    </style>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./student_files/bootstrap.css"> 
+
+    <!-- Calendar Styling  -->
+    <link rel="stylesheet" href="./student_files/calendar.css">
+    
+    <!-- Fonts  -->
+    <link href="./student_files/css" rel="stylesheet" type="text/css">
+    
+    <!-- Base Styling  -->
+    <link rel="stylesheet" href="./student_files/app.v1.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+<body data-ng-app="" class="ng-scope">
+
+    
+    <!-- Preloader -->
+    
+    <!-- Preloader -->
+        
+    
+    <aside class="left-panel" tabindex="5003" style="overflow: hidden; outline: none;">
+            
+            <div class="user text-center">
+                  <img src="./student_files/user.png" class="img-circle" alt="...">
+                  <h4 class="user-name">Akshay Kumar</h4>
+                  
+                  <!--<div class="dropdown user-login">
+                  <button class="btn btn-xs dropdown-toggle btn-rounded" type="button" data-toggle="dropdown" aria-expanded="true">
+                    <i class="fa fa-circle status-icon available"></i> Available <i class="fa fa-angle-down"></i>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" href=""><i class="fa fa-circle status-icon signout"></i> Busy</a></li>
+                    <li role="presentation"><a role="menuitem" href=""><i class="fa fa-circle status-icon signout"></i> Sign out</a></li>
+                  </ul>
+                  </div>-->  
+            </div>
+            
+            
+            
+            <nav class="navigation">
+                <ul class="list-unstyled">
+                    <li class="has-submenu"><a href="front.html"><i class="fa fa-heart-o"></i> <span class="nav-label">DashBoard</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="upload.html"><i class="fa fa-bookmark-o"></i><span class="nav-label">File Upload</span></a></li>
+                    
+                    <li class="has-submenu"><a href="#"><i class="fa fa-flag-o"></i> <span class="nav-label">History</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="fa fa-heart-o"></i> <span class="nav-label">Health Data</span></a>
+                        
+                    </li>
+                    <li class="active"><a href="settings.html"><i class="fa fa-heart-o"></i> <span class="nav-label">Account Settings</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="contact.html"><i class="fa fa-heart-o"></i> <span class="nav-label">Contacts</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="fa fa-heart-o"></i> <span class="nav-label">Permissions</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="#"><i class="fa fa-heart-o"></i> <span class="nav-label">Help</span></a>
+                        
+                    </li>
+                    <li class="has-submenu"><a href="index.html"><i class="fa fa-file-text-o"></i> <span class="nav-label">logout</span></a>
+                        
+                    </li>
+                   
+                </ul>
+            </nav>
+            
+    </aside>
+    <!-- Aside Ends-->
+    
+    <section class="content">
+        
+        <header class="top-head container-fluid">
+            <!--<button type="button" class="navbar-toggle pull-left">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            -->
+            
+            
+            <nav class=" navbar-default hidden-xs" role="navigation">
+                <ul class="nav navbar-nav">
+                
+                
+              </ul>
+            </nav>
+            
+          
+        </header>
+        <!-- Header Ends -->
+        
+       
+        <div class="outpopup">
+        <div class="container">
+            
+            <form class="form" action="##" method="post" id="registrationForm">
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="first_name">
+                                    <h4>First name</h4></label>
+                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="last_name">
+                                    <h4>Last name</h4></label>
+                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="phone">
+                                    <h4>Phone</h4></label>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                                <label for="mobile">
+                                    <h4>Mobile</h4></label>
+                                <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="email">
+                                    <h4>Email</h4></label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="email">
+                                    <h4>Location</h4></label>
+                                <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="password">
+                                    <h4>Password</h4></label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-xs-6">
+                                <label for="password2">
+                                    <h4>Verify</h4></label>
+                                <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <br>
+                                <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                            </div>
+                        </div>
+                    </form>
+    </div>
+        </div>
+
+               
+                <!--/tab-pane-->
+                
+                <!--/tab-pane-->
+                
+        <!--/tab-content-->
+
+    
+<!--/row-->
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+                            
+
+                        
+
+                  
+                                                      
+</script>
+       
+        
+    </section>
+    
+    
+
+</body></html>
