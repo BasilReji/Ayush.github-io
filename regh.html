@@ -192,32 +192,24 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registration Info</h2>
-                    <form method="POST">
+                    <form method="POST" action="url('http://localhost:3002/api/signup')">
 			<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="HospitalID" name="HospitalID">
+                            <input class="input--style-1" type="text" placeholder="HospitalID" name="userID">
                         </div>
 
                         <div class="input-group">
                             <input class="input--style-1" type="text" placeholder="NAME" name="name">
                         </div>
 				<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Email" name="Email">
+                            <input class="input--style-1" type="text" placeholder="Email" name="email">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="Password" placeholder="Password" name="Password">
+                            <input class="input--style-1" type="Password" placeholder="Password" name="password">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="Password" placeholder="Confirm Password" name="ConfirmPassword">
+                            <input class="input--style-1" type="Password" placeholder="Confirm Password" name="password">
                         </div>
-			<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Phone" name="Phone">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Website" name="Website">
-                        </div>
-			<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Location" name="Location">
-                        </div>
+			
                       
                       <!--        <div class="col-2">
                                 <div class="input-group">
@@ -225,19 +217,8 @@
                                     <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                 </div>
                             </div> -->
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
-                                            <option disabled="disabled" selected="selected">Public/Private</option>
-                                            <option>Government</option>
-                                            <option>Private</option>
-                                
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <br>Address:<br>
+                            <textarea cols="50" rows="10" id="address" name="address"></textarea>
                         
 
 			<div class="col-2">

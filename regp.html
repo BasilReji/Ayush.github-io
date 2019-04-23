@@ -134,6 +134,8 @@
         }
 
     </style>
+
+ 
 </head>
 
 
@@ -194,63 +196,39 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registration Info</h2>
-                    <form method="POST">
+                    <form method="POST" action="url('http://localhost:3002/api/signup')" >
+                    	<div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="UserID" name="userID" id="userID">
+                        </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="NAME" name="name">
+                            <input class="input--style-1" type="text" placeholder="NAME" name="fullname" id="fullname">
                         </div>
 				<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Email" name="Email">
+                            <input class="input--style-1" type="text" placeholder="Email" name="email" id="email">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="Password" placeholder="Password" name="Password">
+                            <input class="input--style-1" type="Password" placeholder="Password" name="password" id="password">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="Password" placeholder="Confirm Password" name="ConfirmPassword">
+                            <input class="input--style-1" type="Password" placeholder="Confirm Password" name="password" id="password">
                         </div>
-			<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Phone" name="Phone">
-                        </div>
-                        <div class="row row-space">
+			
+                        
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE" name="birthday">
+                                    <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE" name="dob" id="dob">
                                     <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
-                                            <option disabled="disabled" selected="selected">GENDER</option>
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                            <option>Other</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            
+                        
 		<div class="input-group">
-                            <input class="inputt--style-1" type="text" placeholder="Age" name="age">
+                            <input class="inputt--style-1" type="text" placeholder="Age" name="age" id="age">
                         </div>
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class">
-                                    <option disabled="disabled" selected="selected">Blood Group</option>
-                                    <option>A RhD positive (A+)</option>
-                                    <option>A RhD negative (A-)</option>
-                                    <option>B RhD positive (B+)</option>
-				    <option>B RhD negative (B-)</option>
-				    <option>O RhD positive (O+)</option>
-				    <option>O RhD negative (O-)</option>
-				    <option>AB RhD positive (AB+)</option>
-				    <option>AB RhD negative (AB-)</option>
-
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
+                        <br>Address:<br>
+                        	<textarea cols="50" rows="10" id="address" name="address"></textarea>
+             
+                        
                         
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit">Submit</button>
